@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario de Ansiedad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Cuestionario de Ansiedad</h1>
+    <form action="resultado.php" method="post">
+        <div class="question">
+            <label for="pregunta1">¿Qué tan ansioso te sientes últimamente?</label>
+            <ul class="options">
+                <li><input type="radio" name="ansiedad" value="1" required> Muy ansioso</li>
+                <li><input type="radio" name="ansiedad" value="2"> Algo ansioso</li>
+                <li><input type="radio" name="ansiedad" value="3"> Poco ansioso</li>
+                <li><input type="radio" name="ansiedad" value="4"> No estoy ansioso</li>
+            </ul>
+        </div>
+        
+        <!-- Aquí puedes agregar más preguntas si lo deseas -->
+
+        <input type="submit" value="Enviar" class="submit-btn">
+    </form>
+</div>
+
+</body>
+</html>
